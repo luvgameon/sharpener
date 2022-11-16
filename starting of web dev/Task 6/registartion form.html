@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        body {
+  background-image: url('pic.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+        form{
+            
+            font-size: 25px;
+            text-align: center;
+            color: azure;
+            margin-left: auto; margin-right: auto;
+            width: 700px;
+            height: 350px;
+            border: 3px solid grey;
+  
+            
+        }
+        input{
+            color: black;
+        
+            width: 500px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+   
+    <h1 style="text-align: center; color: blueviolet;" >Book A call </h1>
+    
+    <h4 style="text-align: center; color: beige;">Book a call Slot and our represtative will call you</h4>
+    <hr>
+    <form action="#" onsubmit="onsignup()">
+       
+            <label for="fname">First Name : </label><br>
+            <input type="text" name="fname" id="fname"  required ><br>
+            <label for="email">Email : </label><br>
+            <input type="email" name="email" id="email" required/><br>
+
+            <label for="phone">Phone: </label><br>
+            <input type="number" id="phone" required/><br>
+            <label for="time">Time for call </label><br>
+            <input type="time" id="time"><br> <br>
+            <input type="submit" value="Get a Call">
+
+        
+    </form>
+    
+    <script>
+       function onsignup(){
+        event.preventDefault();
+
+        const name = document.getElementById('fname').value;
+        const mail = document.getElementById('email').value;
+        const number = document.getElementById('phone').value;
+        console.log(name)
+        console.log(mail)
+
+        console.log(number)
+      
+       
+        }
+    </script>
+</body>
+</html>
